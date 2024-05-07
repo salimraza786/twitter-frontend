@@ -21,6 +21,7 @@ const CreatePost = () => {
         { description , id:user?._id },{
           headers: {
             "Content-Type": "application/json",
+            "Access-Control-Allow-Origin": "*",
           },
           withCredentials: true,
         });
